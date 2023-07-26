@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dota_navigation"
+    app:startDestination="@id/rickiMortiListFragment">
+    <fragment
+        android:id="@+id/rickiMortiListFragment"
+        android:name="com.giuliana.evaluacioncontinuatres.view.fragments.RickiMortiListFragment"
+        android:label="fragment_ricki_morti_list"
+        tools:layout="@layout/fragment_ricki_morti_list" >
+        <action
+            android:id="@+id/action_rickiMortiListFragment_to_rickiMortiDetailFragment"
+            app:destination="@id/rickiMortiDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.giuliana.evaluacioncontinuatres.view.fragments.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/rickiMortiFavoriteFragment"
+        android:name="com.giuliana.evaluacioncontinuatres.view.fragments.RickiMortiFavoriteFragment"
+        android:label="fragment_ricki_morti_favorite"
+        tools:layout="@layout/fragment_ricki_morti_favorite" >
+        <action
+            android:id="@+id/action_rickiMortiFavoriteFragment_to_rickiMortiDetailFragment"
+            app:destination="@id/rickiMortiDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rickiMortiDetailFragment"
+        android:name="com.giuliana.evaluacioncontinuatres.view.fragments.RickiMortiDetailFragment"
+        android:label="fragment_ricki_morti_detail"
+        tools:layout="@layout/fragment_ricki_morti_detail" />
+</navigation>
